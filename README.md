@@ -7,9 +7,11 @@
 |Dataset|Bicubic|SwinIR|
 |:---:|:---:|:---:|
 |Set5|28.648|32.666 (32.920)|
-|Set14|26.406|29.418 (29.090)|
+|Set14|26.406|29.020 (29.090)|
 |Urban100|23.220|27.133 (27.450)|
 <p>(number) comes from the paper.</p>
+<p>[2023.05.04: Set14 result update]</p>
+<p>Now gray-scale test image result is included. Please be aware that still this code does not use gray-scale test images.</p>
 
 ### Set14
 | Bicubic | SwinIR | GT |
