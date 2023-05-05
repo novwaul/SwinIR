@@ -152,7 +152,7 @@ if __name__ == '__main__':
     os.environ['MASTER_ADDR'] = '127.0.0.1'
     os.environ['MASTER_PORT'] = '8888'
     ngpus_per_node = torch.cuda.device_count()
-    #mp.spawn(setup_and_train, nprocs=ngpus_per_node, args=(ngpus_per_node, net))
+    mp.spawn(setup_and_train, nprocs=ngpus_per_node, args=(ngpus_per_node, net))
 
     ### test
     mp.spawn(setup_and_test, nprocs=1, args=(net,))
